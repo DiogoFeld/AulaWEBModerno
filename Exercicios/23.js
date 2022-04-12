@@ -1,16 +1,28 @@
-// Criar uma função para calcular o valor a ser pago de anuidade de uma associação. 
-// A função recebe como parâmetro um inteiro que representa o mês (1 - janeiro, 2 - fevereiro…)
-// que foi paga e o valor da anuidade. A anuidade deve ser paga no mês de janeiro. Por mês, é 
-// cobrado 5% de juros (sob o regime de juros compostos). O retorno deve ser o valor a ser pago 
-// para o respectivo mês escolhido.
+// Escreva um algoritmo que leia o código de um aluno e suas três notas. Calcule a média ponderada do
+// aluno, considerando que o peso para a maior nota seja 4 e para as duas restantes, 3. Mostre o código do
+// aluno, suas três notas, a média calculada e uma mensagem "APROVADO" se a média for maior ou igual a 5 e
+// "REPROVADO" se a média for menor que 5. Repita a operação até que o código lido seja negativo.
 
-function anuidade(mes, capitalInicial) {
-    let mesesTotal = 12 - mes;
-    for (mesesTotal; mesesTotal <= 12; mesesTotal++) {
-        console.log(mesesTotal);
-        capitalInicial = capitalInicial * 1.05;
+function Nota(codigo, nota1, nota2, nota3) {
+    if (!!codigo) {
+        const pNota1 = nota1 * 4;
+        const pNota2 = nota2 * 3;
+        const pNota3 = nota3 * 3;
+
+        let total = (nota1 + nota2 + nota3) / 10;
+        if (total >= 5) {
+            console.log(`O resutado é ${total}, o aluno ${codigo} esta aprovado`)
+        }
+        else {
+            console.log(`O resutado é ${total}, o aluno ${codigo} esta reprovado`)
+        }
     }
-    capitalInicial = capitalInicial.toFixed(2);
-    return "o total em janeiro é: R$ " + capitalInicial;
+    else{
+        console.log(`O código é invalido`)
+    }
 }
-console.log(anuidade(5, 2400));
+
+
+Nota(764532,8,5,2);
+Nota("",4,4,4);
+Nota(0,8,4,6);
