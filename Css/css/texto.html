@@ -16,6 +16,84 @@
             flex-direction: column;
             align-items: center;
         }
+
+
+        p {
+            /* valores padroes */
+            font-size: 1em;
+            /* e vez o tamanho padrão*/
+            font-size: 100%;
+            /*  valor padrao do browsers */
+            font-size: 12pt;
+
+
+            /*valores Absolutos*/
+
+
+            font-size: 100px;
+            /*pixel -> seu valor é relativo ao tamanho*/
+            font-size: 72pt;
+            /* pontos */
+            font-size: 1in;
+            /* polegadas */
+
+
+            /* unidades relativas */
+            font-size: 2.2em;
+            /*usara a referencia mais proximo, no 
+            caso, da div abaixo */
+            font-size: 2.2rem;
+            /*usara a referencia do html padrao */
+            font-size: 10vw;
+            /*Altura do ViewPort -> tela*/
+
+
+            font-family: monospace;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /*serif é comando
+            para procurar fontes serifadas*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /*não serifadas*/
+            font-family: cursive;
+
+
+            font-weight: 100;
+            font-style: normal;
+            text-transform: capitalize;
+            /*varias opcções*/
+            text-decoration:line-through;
+            word-spacing: 10px;
+            letter-spacing: 5px;
+            line-height: 1.5em;
+            text-align: center;
+        }
+
+
+        .botao{
+            font-size: 30px;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+
+
+        .destaque{
+            color: #FFF;
+            background-color: tomato;
+            box-shadow: 2px 2px 1px 1px #000;
+        }
+
+        .destaque:hover{
+            background-color: #ea553a
+        }
+        .destaque:active{
+            box-shadow: none;
+        }
+
+        div {
+            font-size: 50px;
+
+        }
     </style>
 </head>
 

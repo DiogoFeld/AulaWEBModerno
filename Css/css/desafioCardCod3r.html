@@ -5,55 +5,51 @@
     <meta charset="UTF-8">
     <title>Desafio Card</title>
     <style>
-        .curso {
-            width: 250px;
-            display: inline-block;
-            border: 1px solid #aaa;
-            box-shadow: 1px 1px 1px 1px grey;
-            box-shadow: 5px 10px 5px 3px #DDD;
-            margin-left: 25px;
+        .curso {            
+            float: left;
+            font-family: Verdana, sans-serif;
+            border: solid 1px #CCC;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.207);
+            height: 300px;
+            width: 260px;
+            margin: 5px 20px;
+            padding: 5px;
         }
+
 
         .curso img {
-            box-sizing: content-box;
-            max-width: 100%;
-            max-height: 100%;
-            display: block;
-            margin: 5px;
+            width: 100%;
+            max-height: 50%;
         }
-
 
         .curso-info {
-            text-align: left;
-            font-size: 1.3em;
-            font-family: none;
-            margin: 0;
-            padding-left: 14px;
+            padding: 10px;
+            height: 90px;
+            overflow: hidden;
         }
 
-        p {
-            font-size: 0.8em;
-            font-weight: bold;
-        }
 
+        .curso-info h4 {
+            font-size: 1.4em;
+            font-weight: 100;
+            margin: 0px;
+        }
 
         .curso-preco {
             float: right;
+            padding: 10px;
         }
 
-        .curso-preco span:nth-child(1) {
-            color: #c7442c;
+        .preco-de {
             text-decoration: line-through;
-            padding-right: 7px;
-            font-weight: bold;
-            font-size: 1.1em;
+            color:firebrick;            
         }
-        .curso-preco span:last-child {
-            color: #098009;
-            padding-right: 10px;
-            font-weight: 500;
-            font-size: 1.6em;
-            font-family: fantasy;
+
+        .preco-por {
+                        color:green;            
+            font-weight: bold;
+            font-size: 1.4em;
+
         }
 
 

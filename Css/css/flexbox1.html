@@ -6,7 +6,58 @@
     <title>Flexbox #01</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        .flex-container{
+            border:2px solid rgb(4, 4, 185);     
+            display: flex;   
+            /* flex direction -> ordenação*/    
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction:row-reverse;
+            flex-direction:row;
+            width: 25%;/* irá causar overflow  */
+            flex-wrap: wrap;/* irá quebrar a linha para conter os elementos */
+            flex-wrap: wrap-reverse;/*inverte as posições*/
+            flex-flow: row wrap;
+            height: 200px;            
+            flex-flow: row wrap;
+
+            justify-content: flex-start;
+            justify-content:center;
+            justify-content: flex-end;
+            justify-content: space-around;
+            justify-content: space-between;
+
+            flex-direction: row-reverse;/*muda apenas a row*/
+
+
+            /*Corss Axis*/
+            height: 400px;
+            align-items: stretch;/* padrao */
+            align-items: baseline;
+            align-items:flex-start;
+            align-items:flex-end;
+            align-items:center;
+
+
+            /* mais uma linha */
+            align-content: flex-start;  
+            align-content: flex-end;  
+            align-content:center;
+            align-content:space-around;
+            align-content: space-between;
+
+
+        }
+
+        .flex-container div{
+            border:3px solid rgb(4, 4, 185);
+            font-size:40px;
+            margin: 5px;
+        }
+
+        .big{
+            font-size: 1.5em;
+        }
     </style>
 </head>
 
@@ -23,7 +74,7 @@
         <div class="tag nolabel">9</div>
         <div class="tag nolabel">10</div>
     </div>
-    <script src="js/tag.js"></script>
+    <!-- <script src="js/tag.js"></script> -->
 </body>
 
 </html>
