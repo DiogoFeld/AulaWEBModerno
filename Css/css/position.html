@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        body{
+            font-size: 40px;
+            color:white;
+        }
+
+
+        div{
+            padding: 30px;
+            border: solid 5px #444
+        }
+
+        .static{
+            top:100px;
+            left: 100px;
+            background-color: steelblue;
+        }
+
+        .fixed{
+            bottom:30px;
+            right: 0px;
+            position: fixed;
+            background-color: tomato;            
+        }
+
+
+        .relative1{/* tem como base o elemento anterior  */
+            position: relative;
+            left: 50px;
+            top:5px;
+            background-color: rgb(64, 127, 209);
+        }
+    
+        .absolute1{
+            position: absolute;
+            left:350px;
+            top:120px;
+            background-color: firebrick;
+        }
+
+
+        .relative2{/* tem como base o elemento anterior  */
+            /* position: relative; */
+            left: 250px;
+            top:400px;
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+        }
+
+        .absolute2{
+            position: absolute;
+            left:10px;
+            top:10px;
+            width:10px;
+            height:20px;
+            background-color: green;
+        }
+
+
+        .sticky{/* Gruda na tela após scroll */
+            position: -webkit-sticky;/*SAFARi*/
+            position:sticky;
+            background-color: #777;
+            top:30px;
+        }
+        /* ... */
+    </style>
+</head>
+
+<body>
+    <div class="static">Static (Padrão)</div>
+    <div class="fixed">Fixed</div>
+    <div class="relative1">Relative</div>
+    <div class="absolute1">Absolute</div>
+
+    <div class="relative2">
+        <div class="absolute2"></div>
+    </div>
+
+    <div class="sticky">Sticky</div>
+    <p style="padding-bottom: 2000px;">Opa</p>
+</body>
+
+</html>

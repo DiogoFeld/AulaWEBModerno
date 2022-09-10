@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="./js/desafioMenu.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 30px;
+            font-family: 'oswald', sans-serif;
+            height: 120px;
+            background-color: rgb(202 187 187);
+            box-sizing: content-box;
+        }
+
+        .cabecalho {
+            background-color: rgb(7 4 4 / 73%);
+            border-bottom: 2px solid rgb(62, 62, 212);
+            width: 100%;
+        }
+
+        .logo {
+            display: inline-block;
+            height: 80px;
+            padding: 15px;
+        }
+
+        .logo img {
+            height: 100%;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+
+        .menu-toggle {
+            margin-top: 20px;
+            background-color: #3c3636;
+            color: white;
+            border: solid 2px white;
+            padding: 12px;
+            display: '';
+            float: right;
+            height: 40px;
+            margin-right: 20px;
+            cursor: pointer;
+            }
+
+
+        .menu {
+            display: inline-block;
+            height: 100%;
+            padding: 25px;
+            font-size: 1.2em;
+            padding: 15px;
+        }
+
+
+        .autenticacao{
+            float: right;
+            height: 80px;
+            padding: 20px;
+
+        }
+
+        .menu li{
+            display: inline-block;
+            padding: 10px;
+        }
+
+
+        .selected{
+            background-color: #257ecc;
+        }
+
+        .menu li:hover,menu li.selected {
+            background-color: #257ecc;
+        }
+
+        .menu li:active{
+            border:1px solid white;
+        }
+
+        .botao{            
+            margin: 10px;
+            padding: 10px 25px;
+            border-radius: 25px;
+        }
+
+        .destaque{
+            background-color: tomato;
+            color:#fff
+        }
+
+
+        @media(min-width:600px) {
+            .menu-toggle {
+                display:none;
+            }
+        }
+
+
+        @media(max-width:790px){
+            .menu{
+                display:none;
+            }
+        }
+
+
+        @media(max-width:1070px){
+            .autenticacao{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="autenticacao">
+            <a href="#login">Login</a>
+            <a href="#registar" class="botao destaque">Registrar</a>
+        </aside>
+    </header>
+
+    <script>
+        // ...
+    </script>
+</body>
+
+</html>

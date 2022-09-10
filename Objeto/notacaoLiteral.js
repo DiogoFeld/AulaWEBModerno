@@ -8,7 +8,6 @@ const obj1 = {a,b,c}
 
 console.log(obj1,obj2);
 
-
 //notacao literal
 const nota = "nota";
 const valorNota = 7.54;
