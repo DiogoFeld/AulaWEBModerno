@@ -1,7 +1,4 @@
 *{
-    margin:0;
-    padding:0;
-    font-size: 1.4em;
     box-sizing: border-box;
 }
 
@@ -15,4 +12,12 @@ a{
     text-decoration-line: underline;
     color: #602d83;
     font-size: 1em;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+    margin-bottom: 40px;
 }

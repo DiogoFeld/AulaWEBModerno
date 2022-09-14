@@ -15,9 +15,15 @@
         Exercicios
     </h1>
     <nav>
-
         <span id="aImitation" onclick="reset()">Reset</span>
-        <a href="exercicios/ex1.html">ex1</a>
+        <a href="exercicios/ex1.html">Paragrafo</a>
+        <a href="exercicios/ex2.html">Quebra de Linha</a>
+        <a href="exercicios/ex3.html">Listas</a>
+        <a href="exercicios/ex4.html">Lista aninhada</a>
+        <a href="exercicios/ex5.html">Links</a>
+        <a href="exercicios/ex6.html">Tabela</a>
+        <a href="exercicios/ex7.html">Formulario</a>
+
     </nav>
     <section id="conteudo">
 
@@ -28,12 +34,12 @@
     <script>
         document.querySelectorAll("a").forEach(link => {
             link.onclick = function(e){
-                e.preventDefault();
+                // e.preventDefault();
 
-                const section = document.getElementById("conteudo");
-                fetch(link.href)
-                    .then(resp => resp.text())//pega o conteudo html da requisicap
-                    .then(html => section.innerHTML = html)
+                // const section = document.getElementById("conteudo");
+                // fetch(link.href)
+                //     .then(resp => resp.text())//pega o conteudo html da requisicap
+                //     .then(html => section.innerHTML = html)
             }
         })
     </script>
